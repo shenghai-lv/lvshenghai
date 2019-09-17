@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>flex布局练习</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #top{
+            height: 50px;
+            background-color: rgb(131, 53, 109);
+            margin-bottom: 10px;
+        }
+        .container{
+            width: 90%;
+            margin: 0 auto;
+            background-color: #eee;
+            height: 600px;
+            padding-top: 15px;
+        }
+        .row{
+            width: 90%;
+            margin: 0 auto;
+            height: 300px;
+            background-color: #fff;
+            margin-bottom: 10px;
+            display: flex;
+            padding: 15px 5px 5px 5px;
+        }
+        .column{
+            flex: 1 1 23%;
+            height: 90%;
+            margin-bottom: 10px;
+            margin-left: 5px;
+            margin-right: 5px;
+            /* padding: 5px 5px 5px 5px; */
+            border: 1px solid #eee;
+            border-radius: 10px;
+        }
+        .column img{
+            width: 100%;
+            height: 50%;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        #avatar{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+        h2{
+            color: rgb(51, 122, 183);
+        }
+    </style>
+</head>
+<body>
+<div id="top">
+    <span>aaa</span>
+    <span>bbb</span>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="column">
+            <img src="img/1.jpg" >
+            <h2>Java Web</h2>
+            <p>Java WebJava WebJava WebJava WebJava WebJava WebJava Web</p>
+        </div>
+        <div class="column">
+            <img src="img/2.jpg" id="avatar" >
+            <h2>Java Web</h2>
+            <p>Java WebJava WebJava WebJava WebJava WebJava WebJava Web</p>
+        </div>
+        <div class="column">
+
+        </div>
+        <div class="column">
+
+        </div>
+    </div>
+</div>
+</body>
+</html>
