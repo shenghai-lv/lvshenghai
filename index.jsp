@@ -8,9 +8,11 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
   <head>
-    <title>$Title$</title>
+    <title>首页</title>
   </head>
   <body>
-  $END$
+  <h2>首页</h2>
+  <h2>欢迎您：  <%=request.getAttribute("username")%></h2>
+
   </body>
 </html>
